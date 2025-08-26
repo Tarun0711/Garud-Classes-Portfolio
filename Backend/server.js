@@ -45,7 +45,7 @@ const corsOptions = {
     if (!origin) return callback(null, true);
     
     const allowedOrigins = [
-      process.env.FRONTEND_URL || 'https://garud-classes-portfolio.vercel.app/',
+      'https://garud-classes-portfolio.vercel.app/',
       'http://localhost:3000',
       'http://localhost:8080',
       'http://127.0.0.1:5173',
