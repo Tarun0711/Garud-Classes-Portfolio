@@ -48,7 +48,7 @@ const LoginModal = ({ isOpen, onClose, onLoginSuccess }: LoginModalProps) => {
         onLoginSuccess();
         onClose();
       } else {
-        setError("Invalid username or password. Use admin/admin123 for demo.");
+        setError("Invalid username or password.");
       }
     } catch (err) {
       setError("An error occurred. Please try again.");
@@ -186,12 +186,6 @@ const LoginModal = ({ isOpen, onClose, onLoginSuccess }: LoginModalProps) => {
                   )}
                 </Button>
               </form>
-              
-              <div className="text-center">
-                <p className="text-xs text-gray-500">
-                  Demo credentials: <span className="font-mono bg-gray-100 px-2 py-1 rounded">admin / admin123</span>
-                </p>
-              </div>
             </CardContent>
           </Card>
         </motion.div>
