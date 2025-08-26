@@ -4,7 +4,7 @@ This document describes the Toppers API endpoints for managing student achieveme
 
 ## Base URL
 ```
-http://localhost:5000/api/toppers
+https://garud-classes-portfolio.onrender.com/api/toppers
 ```
 
 ## Endpoints

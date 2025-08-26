@@ -5,7 +5,7 @@ import NotificationDropdown from "./NotificationDropdown";
 import LoginModal from "./ui/login-modal";
 import { useNavigate } from "react-router-dom";
 import { fetchAnnouncements } from "../lib/api";
-
+import logo from '../assets/image.png'
 const TopInfoBar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [announcements, setAnnouncements] = useState<{ id: string; text: string; emoji?: string }[]>([]);
@@ -46,7 +46,7 @@ const TopInfoBar = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center font-bold text-primary text-sm">
               <img 
-                src="https://scontent.fixc10-1.fna.fbcdn.net/v/t39.30808-6/492375030_122222600582196191_2514308025161939756_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=iylF-8jjxGgQ7kNvwGTlwGd&_nc_oc=AdkHprgicrKBpw9It1z81L7S98UfexBc56F5ikRvcHyrpDX2U1Z7y-vP5a8PUMO2gHmRY7ufgDHQDbzpZ17SHYaE&_nc_zt=23&_nc_ht=scontent.fixc10-1.fna&_nc_gid=8oGBl4QuJgzh7DA60h21Tg&oh=00_AfUWzUdLgh2xDlnIFAoSgaPg8LwL2VMBKovYcfOp_klS7w&oe=68A20554"
+                src={logo}
                 alt="Garud Classes Logo"
                 className="w-full h-full object-cover rounded-xl"
               />

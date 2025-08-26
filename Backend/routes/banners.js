@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
     // Add image URLs to banners
     const bannersWithUrls = banners.map(banner => {
       const bannerObj = banner.toObject();
-      bannerObj.imageUrl = `http://localhost:5000/api/images/${banner.image.filename}`;
+      bannerObj.imageUrl = `https://garud-classes-portfolio.onrender.com/api/images/${banner.image.filename}`;
       console.log('Banner image URL:', bannerObj.imageUrl);
       return bannerObj;
     });

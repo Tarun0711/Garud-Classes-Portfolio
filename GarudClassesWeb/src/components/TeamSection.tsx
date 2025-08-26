@@ -15,7 +15,7 @@ import {
 import { useState, useEffect } from "react";
 import { fetchTeamMembers, TeamMemberDto } from "../lib/api";
 
-const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:5000';
+const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL || 'https://garud-classes-portfolio.onrender.com';
 
 const TeamSection = () => {
   const { ref, inView } = useInView({

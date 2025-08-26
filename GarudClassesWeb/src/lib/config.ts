@@ -4,7 +4,7 @@ export const config = {
   api: {
     baseURL: process.env.NODE_ENV === 'production' 
       ? 'https://your-production-domain.com/api' 
-      : 'http://localhost:5000/api',
+      : 'https://garud-classes-portfolio.onrender.com/api',
     timeout: 10000, // 10 seconds
   },
   

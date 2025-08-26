@@ -14,8 +14,8 @@ function testBackendConnection() {
 
   const req = http.request(options, (res) => {
     console.log(`✅ Backend is running! Status: ${res.statusCode}`);
-    console.log(`📍 URL: http://localhost:5000`);
-    console.log(`🔗 Emails endpoint: http://localhost:5000/api/emails`);
+    console.log(`📍 URL: https://garud-classes-portfolio.onrender.com`);
+    console.log(`🔗 Emails endpoint: https://garud-classes-portfolio.onrender.com/api/emails`);
     
     if (res.statusCode === 200) {
       console.log('🎉 Backend is accessible and responding!');

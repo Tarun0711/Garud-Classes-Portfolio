@@ -55,7 +55,7 @@ router.get('/manage', protect, authorize('admin'), async (req, res) => {
     const teamMembersWithUrls = teamMembers.map(member => {
       const memberObj = member.toObject();
       if (member.image && member.image.filename) {
-        memberObj.imageUrl = `http://localhost:5000/uploads/images/${member.image.filename}`;
+        memberObj.imageUrl = `https://garud-classes-portfolio.onrender.com/uploads/images/${member.image.filename}`;
       }
       return memberObj;
     });

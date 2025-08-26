@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { EnrollmentModal } from "./ui/enrollment-modal";
-
+import logo from '../assets/image.png'
 const Navigation = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +63,7 @@ const Navigation = () => {
           >
             <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
               <img 
-                src="https://scontent.fixc10-1.fna.fbcdn.net/v/t39.30808-6/492375030_122222600582196191_2514308025161939756_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=iylF-8jjxGgQ7kNvwGTlwGd&_nc_oc=AdkHprgicrKBpw9It1z81L7S98UfexBc56F5ikRvcHyrpDX2U1Z7y-vP5a8PUMO2gHmRY7ufgDHQDbzpZ17SHYaE&_nc_zt=23&_nc_ht=scontent.fixc10-1.fna&_nc_gid=8oGBl4QuJgzh7DA60h21Tg&oh=00_AfUWzUdLgh2xDlnIFAoSgaPg8LwL2VMBKovYcfOp_klS7w&oe=68A20554"
+                src={logo}
                 alt="Garud Classes Logo"
                 className="w-full h-full object-cover rounded-xl"
               />

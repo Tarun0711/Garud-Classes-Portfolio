@@ -43,7 +43,7 @@ const CoursesSection = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/courses?isPublished=true&status=published&limit=4');
+        const response = await fetch('https://garud-classes-portfolio.onrender.com/api/courses?isPublished=true&status=published&limit=4');
         if (response.ok) {
           const data = await response.json();
           const publishedCourses = data.data.courses.map((course: any) => ({
@@ -186,7 +186,7 @@ const CoursesSection = () => {
                     <div className={`w-16 h-16 bg-gradient-to-r ${course.color} rounded-xl flex items-center justify-center text-2xl text-white shadow-lg overflow-hidden`}>
                       {course.thumbnail ? (
                         <img 
-                          src={`http://localhost:5000/uploads/images/${course.thumbnail}`} 
+                          src={`https://garud-classes-portfolio.onrender.com/uploads/images/${course.thumbnail}`} 
                           alt={course.title}
                           className="w-full h-full object-cover"
                         />

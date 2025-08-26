@@ -30,10 +30,10 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      imgSrc: ["'self'", "data:", "blob:", "http://localhost:5000", "http://localhost:5173"],
+      imgSrc: ["'self'", "data:", "blob:", "https://garud-classes-portfolio.onrender.com", "http://localhost:5173"],
       scriptSrc: ["'self'"],
       styleSrc: ["'self'", "'unsafe-inline'"],
-      connectSrc: ["'self'", "http://localhost:5000", "http://localhost:5173"]
+      connectSrc: ["'self'", "https://garud-classes-portfolio.onrender.com", "http://localhost:5173"]
     }
   }
 }));
@@ -45,7 +45,7 @@ const corsOptions = {
     if (!origin) return callback(null, true);
     
     const allowedOrigins = [
-      process.env.FRONTEND_URL || 'http://localhost:5173',
+      process.env.FRONTEND_URL || 'https://garud-classes-portfolio.vercel.app/',
       'http://localhost:3000',
       'http://localhost:8080',
       'http://127.0.0.1:5173',

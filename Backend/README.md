@@ -120,14 +120,14 @@ Backend/
 
 6. **Verify the server is running**
    ```bash
-   curl http://localhost:5000/health
+   curl https://garud-classes-portfolio.onrender.com/health
    ```
 
 ## 📚 API Documentation
 
 ### Base URL
 ```
-http://localhost:5000/api
+https://garud-classes-portfolio.onrender.com/api
 ```
 
 ### Authentication Endpoints

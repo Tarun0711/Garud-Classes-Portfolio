@@ -181,7 +181,7 @@ const Blog = () => {
                      {featuredPost.imageUrl ? (
                        <div className="w-full h-80 bg-gray-100 rounded-xl overflow-hidden">
                          <img 
-                           src={`http://localhost:5000${featuredPost.imageUrl}`} 
+                           src={`https://garud-classes-portfolio.onrender.com${featuredPost.imageUrl}`} 
                            alt={featuredPost.title} 
                            className="w-full h-full object-cover"
                          />

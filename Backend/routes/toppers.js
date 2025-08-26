@@ -39,7 +39,7 @@ router.get('/', async (req, res) => {
     // Add image URLs to toppers
     const toppersWithUrls = toppers.map(topper => {
       const topperObj = topper.toObject();
-      topperObj.imageUrl = `http://localhost:5000/uploads/images/${topper.image.filename}`;
+      topperObj.imageUrl = `https://garud-classes-portfolio.onrender.com/uploads/images/${topper.image.filename}`;
       console.log('Topper image URL:', topperObj.imageUrl);
       return topperObj;
     });
@@ -72,7 +72,7 @@ router.get('/manage', protect, authorize('admin'), async (req, res) => {
     const toppersWithUrls = toppers.map(topper => {
       const topperObj = topper.toObject();
       if (topper.image && topper.image.filename) {
-        topperObj.imageUrl = `http://localhost:5000/uploads/images/${topper.image.filename}`;
+        topperObj.imageUrl = `https://garud-classes-portfolio.onrender.com/uploads/images/${topper.image.filename}`;
       }
       return topperObj;
     });
@@ -199,7 +199,7 @@ router.post('/', protect, authorize('admin'), singleUpload, (req, res, next) => 
 
     // Add image URL to response
     const topperObj = topper.toObject();
-    topperObj.imageUrl = `http://localhost:5000/uploads/images/${image.filename}`;
+    topperObj.imageUrl = `https://garud-classes-portfolio.onrender.com/uploads/images/${image.filename}`;
 
     res.status(201).json({
       success: true,
@@ -299,7 +299,7 @@ router.put('/:id', protect, authorize('admin'), singleUpload, async (req, res) =
 
     // Add image URL to response
     const topperObj = topper.toObject();
-    topperObj.imageUrl = `http://localhost:5000/uploads/images/${topper.image.filename}`;
+    topperObj.imageUrl = `https://garud-classes-portfolio.onrender.com/uploads/images/${topper.image.filename}`;
 
     res.json({
       success: true,

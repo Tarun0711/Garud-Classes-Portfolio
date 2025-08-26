@@ -204,7 +204,7 @@ export interface NotificationPaginationDto {
   unreadCount: number;
 }
 
-const API_BASE ='http://localhost:5000';
+const API_BASE ='https://garud-classes-portfolio.onrender.com';
 
 function authHeaders() {
   const token = localStorage.getItem('authToken');

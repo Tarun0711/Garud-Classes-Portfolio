@@ -21,7 +21,7 @@ node test-backend-connection.js
 npm run dev
 
 # 3. Verify the correct URL in frontend
-# Should be: http://localhost:5000/api/emails/enrollment
+# Should be: https://garud-classes-portfolio.onrender.com/api/emails/enrollment
 ```
 
 ### 2. Backend Server Not Running

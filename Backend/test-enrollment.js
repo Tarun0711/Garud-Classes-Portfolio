@@ -26,7 +26,7 @@ async function testEnrollment() {
     console.log('Testing enrollment endpoint...');
     console.log('Sending data:', JSON.stringify(testEnrollmentData, null, 2));
     
-    const response = await axios.post('http://localhost:5000/api/emails/enrollment', testEnrollmentData, {
+    const response = await axios.post('https://garud-classes-portfolio.onrender.com/api/emails/enrollment', testEnrollmentData, {
       headers: {
         'Content-Type': 'application/json'
       }
