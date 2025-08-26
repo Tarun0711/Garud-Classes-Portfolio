@@ -44,7 +44,7 @@ const corsOptions = {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    const allowedOrigins ='https://garud-classes-portfolio.vercel.app/',
+    const allowedOrigins ='https://garud-classes-portfolio.vercel.app/'
     
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
