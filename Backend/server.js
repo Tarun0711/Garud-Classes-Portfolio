@@ -44,14 +44,7 @@ const corsOptions = {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    const allowedOrigins = [
-      'https://garud-classes-portfolio.vercel.app/',
-      'http://localhost:3000',
-      'http://localhost:8080',
-      'http://127.0.0.1:5173',
-      'http://127.0.0.1:3000',
-      'http://127.0.0.1:8080'
-    ];
+    const allowedOrigins ='https://garud-classes-portfolio.vercel.app/',
     
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
