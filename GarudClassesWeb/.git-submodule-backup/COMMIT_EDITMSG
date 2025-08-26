@@ -1,0 +1,38 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	new file:   ENROLLMENT_MODAL_README.md
+#	new file:   LOGIN_SYSTEM_README.md
+#	modified:   index.html
+#	modified:   package-lock.json
+#	modified:   public/favicon.ico
+#	modified:   src/App.css
+#	modified:   src/App.tsx
+#	new file:   src/assets/image.png
+#	modified:   src/components/CoursesSection.tsx
+#	modified:   src/components/Footer.tsx
+#	modified:   src/components/HeroSection.tsx
+#	modified:   src/components/Navigation.tsx
+#	modified:   src/components/NotificationDropdown.tsx
+#	new file:   src/components/ProtectedRoute.tsx
+#	modified:   src/components/ResultsSection.tsx
+#	new file:   src/components/TeamSection.tsx
+#	modified:   src/components/TopInfoBar.tsx
+#	new file:   src/components/ui/enrollment-modal.tsx
+#	new file:   src/components/ui/login-modal.tsx
+#	new file:   src/contexts/AuthContext.tsx
+#	modified:   src/index.css
+#	new file:   src/lib/api.ts
+#	new file:   src/lib/config.ts
+#	new file:   src/pages/AdminDashboard.tsx
+#	modified:   src/pages/Blog.tsx
+#	new file:   src/pages/BlogPost.tsx
+#	modified:   src/pages/Contact.tsx
+#	modified:   src/pages/Index.tsx
+#git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
