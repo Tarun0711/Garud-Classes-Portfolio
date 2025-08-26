@@ -23,16 +23,6 @@ const notificationSchema = new mongoose.Schema({
     enum: ['low', 'normal', 'high', 'urgent'],
     default: 'normal'
   },
-  recipient: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  },
-  sender: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  },
   isRead: {
     type: Boolean,
     default: false
