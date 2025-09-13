@@ -44,7 +44,17 @@ const corsOptions = {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    const allowedOrigins ='https://garud-classes-portfolio.vercel.app/'
+    const allowedOrigins = [
+      'https://garud-classes-portfolio.vercel.app',
+      'https://www.garudclasses.com',
+      'https://garudclasses.com',
+      'http://localhost:5173',
+      'http://localhost:3000',
+      'http://localhost:8080',
+      'http://127.0.0.1:5173',
+      'http://127.0.0.1:3000',
+      'http://127.0.0.1:8080'
+    ];
     
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
@@ -140,7 +150,17 @@ app.get('/api/images/:filename', (req, res) => {
   
   // Set CORS headers
   const origin = req.headers.origin;
-  const allowedOrigins = '*'
+  const allowedOrigins = [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'http://localhost:8080',
+    'http://127.0.0.1:5173',
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:8080',
+    'https://www.garudclasses.com/',
+    'https://garudclasses.com/',
+    'https://garud-classes-portfolio.vercel.app/'
+  ];
   
   if (allowedOrigins.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
