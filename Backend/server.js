@@ -140,16 +140,7 @@ app.get('/api/images/:filename', (req, res) => {
   
   // Set CORS headers
   const origin = req.headers.origin;
-  const allowedOrigins = [
-    process.env.FRONTEND_URL || 'http://localhost:5173',
-    'http://localhost:3000',
-    'http://localhost:8080',
-    'http://127.0.0.1:5173',
-    'http://127.0.0.1:3000',
-    'http://127.0.0.1:8080',
-    'https://www.garudclasses.com/',
-    'https://garud-classes-portfolio.vercel.app/'
-  ];
+  const allowedOrigins = '*'
   
   if (allowedOrigins.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
